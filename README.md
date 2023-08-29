@@ -86,7 +86,7 @@ This ID represents the most likely token (according to the model) to replace the
 After all masked positions in $M$ have been replaced by their respective predicted tokens, we decode the updated token sequence back into a protein sequence format:
 
 $$
-S = \text{tokenizer.decode}(T(S)[0], \text{skip\_special\_tokens=True})
+S = \mathbf{tokenizer.decode}(T(S)[0], \mathbf{skip\_special\_tokens=True})
 $$
 
 This updated sequence $S$ is then used in the next iteration.
